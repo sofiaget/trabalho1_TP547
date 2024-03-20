@@ -3,8 +3,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-p=0.4#Probabilidade de sair bola branca
-value=6 #tirar a bola branca na sexta tentativa
+p=0.4#Probabilidade de sair bola preta
+value=6 #tirar a bola preta na sexta tentativa
 N=100000#Número de amostras
 count=0
 
