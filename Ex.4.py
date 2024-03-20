@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 lambda1=3 #Número de falhas em uma semana
 N=100000 #Numero de amostras
-value=3 #ao menos 3 falhas em uma semana
+value=2 #ao menos 3 falhas em uma semana
 count=0
 av=np.array([])
 x=np.random.uniform(0,1,N)
@@ -25,11 +25,11 @@ for ix in x:
 print(av)
 
 for poissonvalue in av:
-    if poissonvalue<value: # probabilidade de ser menor que 3. Prob. de 0, 1 e 2.
+    if poissonvalue<value: # probabilidade de ser menor que 2. Prob. de 0 e 1.
         count=count+1
 prob=count/N
 
-prob1=1-prob # probilidade de ser maior e igual a 3.
+prob1=1-prob # probilidade de ser maior e igual a 2.
 print("a probabilidade e",prob1)
 
 #plot histograma da variavel
