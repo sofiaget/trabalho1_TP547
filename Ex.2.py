@@ -3,10 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-lambda1=5 #Número médio de chamadas em uma hora
+lambda1=6 #Número médio de chamadas em uma hora
 N=100000 #Numero de amostras
 value1=0 #nao receber nenhuma chamada em uma determinada hora
-value2=7 #receber mais de sete chamadas em uma determinada hora
+value2=8 #receber menos de oito chamadas em uma determinada hora
 count=0
 av=np.array([])
 x=np.random.uniform(0,1,N) #geração de uma variável aleatória uniforme
@@ -33,10 +33,8 @@ count=0
 for poissonvalue1 in av:
     if poissonvalue1<=value2: #para x<=7, probabilidade de receber 7 chamadas ou menos.
         count=count+1
-prob1=count/N
-
-prob2= 1-prob1 #Probabilidade de receber mais que 7 chamadas
-print("a probabilidade de mais de sete chamadas e",prob2)
+prob1=count/N #Probabilidade de receber menos que 8 chamadas
+print("a probabilidade de mais de sete chamadas e",prob1)
 
 m=lambda1 #media
 v=lambda1 #variancia
