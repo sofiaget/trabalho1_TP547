@@ -2,10 +2,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-q=0.12#Probabilidade de um pistao ser rejeitado
+q=0.15#Probabilidade de um pistao ser rejeitado
 n=8 #Número de pistoes
-value1=3 #não mais que 3 rejeitados
-value2=7 #pelo menos 7 rejeitados
+value1=2 #não mais que 2 rejeitados
+value2=6 #pelo menos 6 rejeitados
 N=100000#Número de amostras
 c = q/(1-q)
 av=np.array([])
@@ -25,14 +25,14 @@ for ix in x:
 print(av)
 
 for binvalue in av:
-    if binvalue<=value1: #Para x<=3. Para a probabilidade de não mais que 3 rejeitados
+    if binvalue<=value1: #Para x<=2. Para a probabilidade de não mais que 2 rejeitados
         count=count+1
 prob=count/N
 print("a probabilidade de nao mais que tres rejeitados e",prob)
 
 count=0
 for binvalue in av:
-    if binvalue>=value2:#Para x>=7. Para a probabilidade de ao menos 7 rejeitados
+    if binvalue>=value2:#Para x>=6. Para a probabilidade de ao menos 6 rejeitados
         count=count+1
 prob1=count/N
 print("a probabilidade de pelo menos sete rejeitados e",prob1)
