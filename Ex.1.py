@@ -3,8 +3,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-x0=2 #Primeira semente
-x00=5 #Segunda semente
+x0=4 #Primeira semente
+x00=7 #Segunda semente
 x1=np.array([x0])
 x11=np.array([x00])
 n=16 #amostras
