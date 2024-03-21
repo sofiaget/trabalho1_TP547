@@ -31,7 +31,7 @@ print("a probabilidade de nenhuma chamda e",prob)
 
 count=0
 for poissonvalue1 in av:
-    if poissonvalue1<=value2: #para x<=7, probabilidade de receber 7 chamadas ou menos.
+    if poissonvalue1<value2: #para x<8, probabilidade de receber  menos que 8 chamadas. 
         count=count+1
 prob1=count/N #Probabilidade de receber menos que 8 chamadas
 print("a probabilidade de mais de sete chamadas e",prob1)
