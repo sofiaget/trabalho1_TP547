@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 lambda1=3 #Número de falhas em uma semana
 N=100000 #Numero de amostras
-value=2 #ao menos 3 falhas em uma semana
+value=2 #ao menos 2 falhas em uma semana
 count=0
 av=np.array([])
 x=np.random.uniform(0,1,N)
